@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Hybrid app test suite" parallel="classes" thread-count="3">
+
+	<suite-files>
+	
+		<!-- Android Suite for Hybrid app testing-->
+		<suite-file path="../singletestAndroid.xml" />
+	  
+	  	<!-- IOS Suite for Hybrid app testing -->
+		<suite-file path="../singletestIOS.xml" />
+		
+	</suite-files>
+	
+</suite>
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestingBasics" verbose="5" data-provider-thread-count="1">
+		<parameter name="browserName" value="iphoneAppium"/>
+		<parameter name="port" value="4723"/>	
+	
+	<test name="TestIOS">
+	    <groups>
+	        <run>
+	            <include name="groupIOS" />
+	        </run>
+	    </groups>
+
+		<packages>
+			<package name="hybrid.testcase.tests"/>
+		</packages>
+	</test>
+	  
+</suite>
