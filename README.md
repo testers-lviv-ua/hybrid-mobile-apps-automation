@@ -31,11 +31,18 @@ IOS-driver should be build with https://github.com/testers-lviv-ua/libimobiledev
 Clone and copy the folder to libimobiledevice-wrapper folder of IOS-driver
 
 Execution:
+
 selendroid part:
+More details here: http://selendroid.io/setup.html
+
 java -jar selendroid-standalone-0.6.0-with-dependencies.jar -app TicketMonster.apk
 
 ios-driver part:
+More details here: http://ios-driver.github.io/ios-driver/
+
 java -jar ios-server-0.6.5-jar-with-dependencies.jar -aut TicketMonster.app -port 4444 -simulators
+
+
 
 Test execution:
 run as testng singletestAndroid/IOS.xml file or generalSuite.xml for both at once.
